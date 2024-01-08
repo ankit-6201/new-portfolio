@@ -1,10 +1,13 @@
 {
   "name": "simplefolio",
   "version": "1.0.1",
+  "homepage": "https://AbhishekCdr.github.io/portfolio",
   "private": "true",
   "description": "A clean, beautiful and responsive portfolio template for Developers!",
   "source": "src/index.html",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "parcel",
     "build": "parcel build",
     "gh-pages-build": "parcel build --public-url ."
@@ -19,9 +22,9 @@
   "bugs": {
     "url": "https://github.com/cobidev/simplefolio/issues"
   },
-  "homepage": "https://github.com/cobidev/simplefolio#readme",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.7.0",
+    "gh-pages": "^6.1.1",
     "parcel": "^2.7.0",
     "prettier": "^2.7.1"
   },
@@ -30,6 +33,7 @@
     "bootstrap": "^5.2.2",
     "jquery": "^3.6.1",
     "popper.js": "^1.16.1",
+    "react-text-transition": "^3.1.0",
     "vanilla-tilt": "^1.7.3"
   }
 }
